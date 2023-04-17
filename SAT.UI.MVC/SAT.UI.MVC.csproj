@@ -36,10 +36,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\_Archive\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SAT.DATA.EF\SAT.DATA.EF.csproj" />
   </ItemGroup>
 
