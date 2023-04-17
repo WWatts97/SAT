@@ -21,6 +21,7 @@
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\_Archive\js\scripts.js" />
   </ItemGroup>
 
   <ItemGroup>
