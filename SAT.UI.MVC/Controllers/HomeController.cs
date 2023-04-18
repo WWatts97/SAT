@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SAT.UI.MVC.Models;
 using System.Diagnostics;
+using SAT.DATA.EF.Models;
 
 namespace SAT.UI.MVC.Controllers
 {
@@ -14,6 +15,11 @@ namespace SAT.UI.MVC.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }

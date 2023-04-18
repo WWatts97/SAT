@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SAT.UI.MVC.Data;
 using SAT.UI.MVC.Models;
+using SAT.DATA.EF.Models;
 
 namespace SAT.UI.MVC
 {
