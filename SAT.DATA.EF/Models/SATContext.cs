@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace SAT.UI.MVC.Models
+namespace SAT.DATA.EF.Models
 {
     public partial class SATContext : DbContext
     {
