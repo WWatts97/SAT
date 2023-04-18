@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Shared\OriginalLayout.cshtml" />
+    <Content Remove="wwwroot\js\scripts.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,7 @@
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\js\scripts.js" />
     <None Include="wwwroot\_Archive\js\scripts.js" />
   </ItemGroup>
 
