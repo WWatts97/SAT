@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<section class="mx-5">
 <h1>Create</h1>
 
 <h4>Enrollment</h4>
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="ScheduledClassId" class="control-label"></label>
-                <select asp-for="ScheduledClassId" class ="form-control" asp-items="ViewBag.ScheduledClassId"></select>
+                <select asp-for="ScheduledClassId" class="form-control" asp-items="ViewBag.ScheduledClassId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="EnrollmentDate" class="control-label"></label>
@@ -35,6 +35,7 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+</section>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

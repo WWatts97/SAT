@@ -18,8 +18,8 @@ namespace SAT.DATA.EF.Models
         public string Location { get; set; } = null!;
         public int Scsid { get; set; }
 
-        public virtual Course Course { get; set; } = null!;
-        public virtual ScheduledClassStatus Scs { get; set; } = null!;
+        public virtual Course? Course { get; set; }
+        public virtual ScheduledClassStatus? Scs { get; set; }
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

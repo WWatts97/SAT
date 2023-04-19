@@ -2,8 +2,10 @@
 
 @{
     ViewData["Title"] = "Index";
-}
 
+    
+}
+<section class="mx-5">
 <h1>Index</h1>
 
 <p>
@@ -26,15 +28,16 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+                string studentName = item.Student.FirstName + " " + item.Student.LastName;
+                <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.EnrollmentDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ScheduledClass.InstructorName)
+                @Html.DisplayFor(modelItem => item.ScheduledClass.Course)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Student.Email)
+                @studentName
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EnrollmentId">Edit</a> |
@@ -45,3 +48,4 @@
 }
     </tbody>
 </table>
+</section>
