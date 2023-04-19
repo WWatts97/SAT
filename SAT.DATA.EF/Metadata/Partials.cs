@@ -14,7 +14,10 @@ namespace SAT.DATA.EF.Models
     public partial class Course { }
 
     [ModelMetadataType(typeof(EnrollmentsMetadata))]
-    public partial class Enrollment { }
+    public partial class Enrollment 
+    {
+        public string EnrolledClassName { get; set; }
+    }
 
     [ModelMetadataType(typeof(ScheduledClassesMetadata))]
     public partial class ScheduledClass { }
