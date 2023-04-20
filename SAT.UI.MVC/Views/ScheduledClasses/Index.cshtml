@@ -57,7 +57,11 @@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ScheduledClassId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ScheduledClassId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ScheduledClassId">Delete</a>
+                @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Delete" asp-route-id="@item.ScheduledClassId">Delete</a>
+                        }
+                
             </td>
         </tr>
 }
