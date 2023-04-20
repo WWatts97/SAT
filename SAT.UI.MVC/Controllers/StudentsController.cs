@@ -104,7 +104,7 @@ namespace SAT.UI.MVC.Controllers
                 }
                 else
                 {
-                    student.PhotoUrl = "noimage.png";
+                    student.PhotoUrl = "NoImage.png";
                 }
 
                 #endregion
@@ -155,7 +155,7 @@ namespace SAT.UI.MVC.Controllers
                 string oldImageName = student.PhotoUrl;
 
                 //Check if the user uploaded a file
-                if (student.PhotoUrl != null)
+                if (student.Image != null)
                 {
                     //get the file's extension
                     string ext = Path.GetExtension(student.Image.FileName);
@@ -164,7 +164,7 @@ namespace SAT.UI.MVC.Controllers
                     string[] validExts = { ".jpeg", ".jpg", ".png", ".gif", ".webp" };
 
                     //check the file's extension against the list of valid extensions
-                    if (validExts.Contains(ext.ToLower()) && student.PhotoUrl.Length < 4_194_303)
+                    if (validExts.Contains(ext.ToLower()) && student.Image.Length < 4_194_303)
                     {
                         //generate a unique file name
                         student.PhotoUrl = Guid.NewGuid() + ext;

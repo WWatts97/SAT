@@ -79,7 +79,14 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                        <img src="~/images/@item.PhotoUrl" />
+                        @if (item.PhotoUrl == null)
+                        {
+                            <img src="~/images/t_NoImage.png" class="img-fluid" />
+                        }
+                        else
+                        {
+                            <img src="~/images/@item.PhotoUrl" class="img-fluid" />
+                        }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ss.Ssname)
