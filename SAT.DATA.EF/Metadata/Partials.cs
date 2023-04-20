@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore.Update;
 using SAT.DATA.EF.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace SAT.DATA.EF.Models
 {
@@ -23,7 +24,11 @@ namespace SAT.DATA.EF.Models
     public partial class ScheduledClassStatus { }
 
     [ModelMetadataType(typeof(StudentsMetadata))]
-    public partial class Student { }
+    public partial class Student 
+    {
+        [NotMapped]
+        public IFormFile? Image { get; set; }
+    }
 
     [ModelMetadataType(typeof(StudentStatusesMetadata))]
     public partial class StudentStatus { }

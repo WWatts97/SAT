@@ -52,7 +52,7 @@ namespace SAT.DATA.EF.Models
         [StringLength(60)]
         public string? Email { get; set; }
 
-        [Required]
+        
         [StringLength(100)]
         [Display(Name = "Image")]
         public string PhotoUrl { get; set; }
